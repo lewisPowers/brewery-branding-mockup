@@ -302,7 +302,8 @@ h1 {
 
 .center-text > li {
   justify-content: center;
-  opacity:.7;
+  font-size: 1.2em
+  /* opacity:.7; */
 }
 
 .footer-icon-container > h4 {
@@ -380,12 +381,16 @@ li,
   transition: opacity 300ms;
 }
 
-
-.internal-container > ul,
-div.footer-bottom > ul {
+/* div.footer-bottom > ul */
+.internal-container > ul {
   display: flex;
   gap: .5em;
   opacity: .65;
+}
+
+div.footer-bottom > ul {
+  display: flex;
+  gap: 3em;
 }
 
 div.footer-bottom > ul li {
@@ -509,6 +514,9 @@ div.footer-bottom > ul li {
     justify-content: space-evenly;
   }
   .navbar div > ul {
+    gap: 1em;
+  }
+  div.footer-bottom > ul {
     gap: 1em;
   }
 }
